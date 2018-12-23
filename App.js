@@ -9,14 +9,6 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
 import NavigationBar from "./NavigationBar";
-
-const instructions = Platform.select({
-  ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
-  android:
-    "Double tap R on your keyboard to reload,\n" +
-    "Shake or press menu button for dev menu"
-});
-
 type Props = {};
 export default class App extends Component<Props> {
   componentWillMount() {
@@ -26,7 +18,20 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>React Native Component : Navigation Bar : Color Change</Text>
+        <Text style={styles.textContainer}>
+          React Native Component : Navigation Bar : Color Change {"\n"}
+          {"\n"}
+          Package and Module can be seen in android folder package named
+          nativegame{"\n"}
+          {"\n"}
+          Two files one for moodule and other one package where we register the
+          Module
+          {"\n"}
+          {"\n"}
+          Passing package back to NavigationBar.js file and export it so that it
+          can be used in any other package{"\n"}
+          {"\n"}
+        </Text>
       </View>
     );
   }
@@ -37,16 +42,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    backgroundColor: "#333333"
   },
-  welcome: {
+  textContainer: {
+    fontFamily: "Roboto",
+    padding: 20,
+    textAlign: "left",
     fontSize: 20,
-    textAlign: "center",
-    margin: 10
-  },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5
+    color: "#fafafa"
   }
 });

@@ -1,3 +1,4 @@
+//https://facebook.github.io/react-native/docs/native-modules-android#the-toast-module
 package com.navigationbar;
 
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
@@ -14,8 +15,7 @@ import android.graphics.Color;
 
 import java.util.Map;
 
-
-public class NavigationBarModule  extends ReactContextBaseJavaModule {
+public class NavigationBarModule extends ReactContextBaseJavaModule {
     public NavigationBarModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
